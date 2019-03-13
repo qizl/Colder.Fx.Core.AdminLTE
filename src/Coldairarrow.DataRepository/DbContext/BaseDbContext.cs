@@ -33,7 +33,7 @@ namespace Coldairarrow.DataRepository
             if (_nameOrConStr.IsNullOrEmpty())
                 _nameOrConStr = GlobalSwitch.DefaultDbConName;
 
-            string conStr = DbProviderFactoryHelper.GetConStr(_nameOrConStr);
+            var conStr = DbProviderFactoryHelper.GetConStr(_nameOrConStr);
 
             switch (_dbType)
             {

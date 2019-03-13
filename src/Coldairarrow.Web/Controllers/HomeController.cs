@@ -16,10 +16,7 @@ namespace Coldairarrow.Web
 
         #region 视图功能
 
-        public ActionResult Index()
-        {
-            return View();
-        }
+        public ActionResult Index() => View();
 
         [IgnoreLogin]
         public ActionResult Login()
